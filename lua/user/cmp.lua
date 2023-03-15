@@ -45,6 +45,8 @@ local kind_icons = {
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
+cmp.config.window.bordered = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
+
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -118,9 +120,6 @@ cmp.setup {
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
-  },
-  documentation = {
-    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
   },
   experimental = {
     ghost_text = false,
